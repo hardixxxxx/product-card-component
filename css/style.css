@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    min-height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.size-50-100 {
+    width: 50%;
+    height: inherit;
+}
+
+.product-image picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.product-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6% 6%;
+}
+
+.dark-gray {
+    color: hsl(228, 12%, 48%);
+}
+
+.dark-blue {
+    color: hsl(212, 21%, 14%);
+    line-height: 1em;
+}
+
+.dark-cyan {
+    color: hsl(158, 36%, 37%);
+}
+
+.ff-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ff-fraunces {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.title {
+    letter-spacing: 0.3rem;
+}
+
+.old-price {
+    font-size: 0.875rem;
+    font-weight: normal;
+    padding-left: 8%;
+    text-decoration: line-through;
+    align-self: center;
+}
+
+.pay-button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    width: 100%;
+    padding: 5% 10%;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button-text {
+    margin-left: 2%;
+}
+
+.pay-button:hover {
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:850px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .container {
+        width: 90%;
+        height: 94%;
+        flex-direction: column;
+    }
+
+    .product-image {
+        height: 40%;
+    }
+
+    .product-desc {
+        height: 60%;
+    }
+
+    .product-image picture img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .size-50-100 {
+        width: 100%;
+    }
+}
